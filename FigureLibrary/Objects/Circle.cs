@@ -12,7 +12,7 @@
 		{
 			Console.WriteLine("Circle");
 			if (radius <= 0)
-				throw new ArgumentOutOfRangeException("Радиус не может быть отрицательным");
+				throw new ArgumentOutOfRangeException("Радиус не может быть меньше нуля");
 
 			Radius = radius;
 

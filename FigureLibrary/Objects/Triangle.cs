@@ -22,8 +22,8 @@
 
 		public Triangle(double sideA, double sideB, double sideC)
 		{
-			if (sideA < 0 || sideB < 0 || sideC < 0)
-				throw new ArgumentOutOfRangeException("Сторона не может быть отрицательной");
+			if (sideA <= 0 || sideB <= 0 || sideC <= 0)
+				throw new ArgumentOutOfRangeException("Сторона не может быть меньше нуля");
 
 			if (sideA + sideB <= sideC || sideA + sideC <= sideB || sideC + sideB <= sideA)
 				throw new ArgumentOutOfRangeException("Треугольник не существует");
